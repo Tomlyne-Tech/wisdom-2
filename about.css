@@ -121,3 +121,21 @@ body {
     order: -1; /* moves image above text */
   }
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.transform-section {
+  padding: 60px 20px;
+  background: #1a1a1a;
+  text-align: center;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
