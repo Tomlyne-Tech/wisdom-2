@@ -525,7 +525,7 @@ body {
   object-fit: cover;
   flex-shrink: 0;
   border-radius: 10px;
-  background color:white;
+  background-color: white;
 }
 
 .gallery-heading {
@@ -837,10 +837,10 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  transform origin: center;
+  transform-origin: center;
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
-  -webkit box-reflect:below 8px linear-gradient(transparent, #0004);
+  -webkit-box-reflect: below 8px linear-gradient(transparent, #0004);
 }
 
 .box span img{
@@ -856,7 +856,7 @@ body {
 .btns{
   position: absolute;
   bottom:100px;
-  diplay: flex;
+  display: flex;
   gap: 30px;
   
 }
