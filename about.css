@@ -26,10 +26,11 @@ body {
 }
 
 .logo {
-  color: #00ffe1;
+  width: 80px;
   font-size: 24px;
   text-decoration: none;
   font-weight: bold;
+
 }
 
 .nav-links {
