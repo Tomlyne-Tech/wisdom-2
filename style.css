@@ -957,7 +957,6 @@ body {
 
 
 
-
 .footer {
   background-color: #111;
   color: #fff;
@@ -972,7 +971,7 @@ body {
 }
 
 .footer a {
-  color: #f9c846;
+  color: #0059ff;
   text-decoration: none;
   font-weight: 600;
 }
