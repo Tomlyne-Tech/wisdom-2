@@ -980,3 +980,8 @@ body {
 .footer a:hover {
   text-decoration: underline;
 }
+.footer .container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
