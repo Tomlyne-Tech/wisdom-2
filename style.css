@@ -1122,10 +1122,7 @@ textarea:focus {
 }
 
 .logo {
-  color: #00ffe1;
-  font-size: 24px;
-  text-decoration: none;
-  font-weight: bold;
+  width: 80;
 }
 
 .nav-links {
