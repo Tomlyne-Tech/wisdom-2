@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us | Wisdom Chamber</title>
-  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
 
@@ -17,9 +18,10 @@
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
-      <a href="events.html">Events</a>
+      <a href="index.html#transform">Transform</a>
       <a href="founders.html">Founders</a>
-      <a href="Media.html">Media</a>
+      <a href="media.html">Media</a>
+      <a href="index.html#gallery">Events</a>
       <a href="contact.html">Contact</a>
     </nav>
 
@@ -29,56 +31,897 @@
   </div>
 </header>
 
-    <!-- About Section -->
-<section class="about-section" id="about">
-  <div class="container about-container">
-    <div class="about-text reveal">
-      <h2>About Us</h2>
-      <p>
-        Wisdom Chamber is a faith-based community dedicated to spiritual growth and fostering interfaith understanding. Through educational programs, digital platforms, and outreach, we offer space for personal transformation and global impact.
-      </p>
-      <p>
-        Our mission is to inspire purpose, compassion, and dialogue that unites diverse faiths. We believe transformation begins within—and spreads outward into the world.
-      </p>
+<!-- Hero Section -->
+<section class="about-hero">
+  <div class="about-hero-overlay"></div>
+  <div class="container">
+    <div class="about-hero-content animate__animated animate__fadeInUp">
+      <h1>Our Story of Transformation</h1>
+      <p>Discover the journey that led to a global movement of faith, wisdom, and community transformation</p>
     </div>
-    <div class="about-image reveal">
-      <img src="assets\images\events\IMG-20250707-WA0014.jpg" alt="Wisdom Chamber About" />
-    </div>
-  </div>
-
-
-  <div class="about-container">
-    <h1 class="about-title">Our Core Foundation</h1>
-    
-
-    <div class="about-card">
-      <div class="about-section">
-        <h3>Our Mission</h3>
-        <p>
-          To inspire spiritual growth, promote interfaith dialogue, and empower individuals to live with purpose, compassion, and mutual respect.
-        </p>
-      </div>
-
-      <div class="about-section">
-        <h3>Our Vision</h3>
-        <p>
-          To create a global community where faith serves as a unifying force, fostering peace, understanding, and positive change across diverse cultures and beliefs.
-        </p>
-      </div>
-
-      <div class="about-section">
-        <h3>Transformation & Engagement</h3>
-        <p>
-          We partner with faith-based communities to address global issues such as justice and peacebuilding — creating space for compassion and unity.
-        </p>
-      </div>
-    </div>
-
-    <a href="index.html" class="nav-link">
-      <i class="fas fa-arrow-left"></i> Back to Home
-    </a>
   </div>
 </section>
-<script src="about.js"></script>
+
+<!-- Our Story Section -->
+<section class="our-story-section">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-text animate__animated animate__fadeInLeft">
+        <h2 class="section-title">Where It All Began</h2>
+        <div class="story-content">
+          <p class="lead-paragraph">
+            Wisdom Chamber was born from a divine vision to bridge the gap between faith and everyday life, 
+            creating spaces where spiritual growth meets community transformation.
+          </p>
+          <p>
+            Founded on the principles of wisdom, compassion, and interfaith understanding, we began as a small 
+            community gathering with a big dream: to inspire authentic spiritual experiences that transcend 
+            traditional boundaries and unite hearts across diverse backgrounds.
+          </p>
+          <p>
+            Today, we stand as a testament to the power of faith in action, having touched hundreds of lives 
+            through our programs, outreach initiatives, and community partnerships. Our journey continues 
+            to evolve, but our core mission remains unwavering.
+          </p>
+        </div>
+      </div>
+      <div class="story-image animate__animated animate__fadeInRight">
+        <img src="assets/images/events/IMG-20250707-WA0014.jpg" alt="Wisdom Chamber Community" />
+        <div class="image-caption">
+          <p>Community gathering at the orphanage - love in action</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission, Vision, Values Section -->
+<section class="mvv-section">
+  <div class="container">
+    <h2 class="section-title animate__animated animate__fadeInUp">Our Foundation</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      The core principles that guide everything we do
+    </p>
+
+    <div class="mvv-grid">
+      
+      <!-- Mission -->
+      <div class="mvv-card animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="mvv-icon">
+          <i class="fas fa-compass"></i>
+        </div>
+        <h3>Our Mission</h3>
+        <p>
+          To inspire spiritual growth, promote interfaith dialogue, and empower individuals to live with 
+          purpose, compassion, and mutual respect through transformative experiences and meaningful community engagement.
+        </p>
+        <div class="mvv-features">
+          <div class="feature-item">
+            <i class="fas fa-seedling"></i>
+            <span>Spiritual Growth</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-handshake"></i>
+            <span>Interfaith Dialogue</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-heart"></i>
+            <span>Community Empowerment</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="mvv-card animate__animated animate__fadeInUp animate__delay-3s">
+        <div class="mvv-icon">
+          <i class="fas fa-eye"></i>
+        </div>
+        <h3>Our Vision</h3>
+        <p>
+          To create a global community where faith serves as a unifying force, fostering peace, understanding, 
+          and positive change across diverse cultures and beliefs, one heart at a time.
+        </p>
+        <div class="mvv-features">
+          <div class="feature-item">
+            <i class="fas fa-globe"></i>
+            <span>Global Community</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-dove"></i>
+            <span>Peace & Unity</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-users"></i>
+            <span>Cultural Bridge</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Values -->
+      <div class="mvv-card animate__animated animate__fadeInUp animate__delay-4s">
+        <div class="mvv-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <h3>Our Values</h3>
+        <p>
+          Integrity, compassion, inclusivity, and transformative love guide our every action. We believe in 
+          the power of authentic relationships and the strength found in diverse community partnerships.
+        </p>
+        <div class="mvv-features">
+          <div class="feature-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Integrity</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-heart-circle"></i>
+            <span>Compassion</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-hands-helping"></i>
+            <span>Inclusivity</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- What We Do Section -->
+<section class="what-we-do-section">
+  <div class="container">
+    <h2 class="section-title animate__animated animate__fadeInUp">Transforming Lives Through Action</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Our comprehensive approach to spiritual growth and community development
+    </p>
+
+    <div class="programs-grid">
+      
+      <div class="program-card animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="program-icon">
+          <i class="fas fa-praying-hands"></i>
+        </div>
+        <h4>Spiritual Development</h4>
+        <p>Daily devotionals, prayer sessions, and faith-building programs that strengthen spiritual foundations and encourage personal growth in faith.</p>
+        <ul class="program-features">
+          <li>Daily devotional programs</li>
+          <li>Interactive prayer sessions</li>
+          <li>Scripture study groups</li>
+          <li>Personal mentorship</li>
+        </ul>
+      </div>
+
+      <div class="program-card animate__animated animate__fadeInUp animate__delay-3s">
+        <div class="program-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h4>Community Outreach</h4>
+        <p>Active engagement with local communities through service projects, charity events, and partnerships that create lasting positive impact.</p>
+        <ul class="program-features">
+          <li>Orphanage visits & support</li>
+          <li>Community service projects</li>
+          <li>Charity fundraising events</li>
+          <li>Local partnership programs</li>
+        </ul>
+      </div>
+
+      <div class="program-card animate__animated animate__fadeInUp animate__delay-4s">
+        <div class="program-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h4>Educational Programs</h4>
+        <p>Comprehensive learning opportunities including workshops, seminars, and educational content that promote spiritual and personal development.</p>
+        <ul class="program-features">
+          <li>Weekly wisdom talks</li>
+          <li>Leadership development</li>
+          <li>Life skills workshops</li>
+          <li>Youth mentorship programs</li>
+        </ul>
+      </div>
+
+      <div class="program-card animate__animated animate__fadeInUp animate__delay-5s">
+        <div class="program-icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <h4>Digital Ministry</h4>
+        <p>Leveraging technology to spread wisdom and connect communities through online content, social media engagement, and digital outreach.</p>
+        <ul class="program-features">
+          <li>Street Bible Quiz videos</li>
+          <li>Online devotional content</li>
+          <li>Social media ministry</li>
+          <li>Virtual community events</li>
+        </ul>
+      </div>
+
+      <div class="program-card animate__animated animate__fadeInUp animate__delay-6s">
+        <div class="program-icon">
+          <i class="fas fa-hands-helping"></i>
+        </div>
+        <h4>Social Justice</h4>
+        <p>Advocating for justice, equality, and human dignity through awareness campaigns, community dialogue, and collaborative action initiatives.</p>
+        <ul class="program-features">
+          <li>Social justice advocacy</li>
+          <li>Community dialogue forums</li>
+          <li>Human rights awareness</li>
+          <li>Equality initiatives</li>
+        </ul>
+      </div>
+
+      <div class="program-card animate__animated animate__fadeInUp animate__delay-7s">
+        <div class="program-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h4>Global Partnerships</h4>
+        <p>Building bridges across cultures and continents through international collaborations, cross-cultural exchanges, and global impact projects.</p>
+        <ul class="program-features">
+          <li>International partnerships</li>
+          <li>Cross-cultural exchanges</li>
+          <li>Global impact projects</li>
+          <li>Worldwide community network</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Our Impact Section -->
+<section class="impact-section">
+  <div class="container">
+    <h2 class="section-title animate__animated animate__fadeInUp">Our Growing Impact</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Measuring transformation through real numbers and authentic stories
+    </p>
+
+    <div class="impact-stats">
+      <div class="stat-item animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="stat-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3 class="stat-number" data-target="500">0</h3>
+        <p class="stat-label">Lives Transformed</p>
+        <span class="stat-description">People who have experienced spiritual growth and positive life changes</span>
+      </div>
+
+      <div class="stat-item animate__animated animate__fadeInUp animate__delay-3s">
+        <div class="stat-icon">
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <h3 class="stat-number" data-target="75">0</h3>
+        <p class="stat-label">Community Events</p>
+        <span class="stat-description">Gatherings, workshops, and outreach programs organized</span>
+      </div>
+
+      <div class="stat-item animate__animated animate__fadeInUp animate__delay-4s">
+        <div class="stat-icon">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <h3 class="stat-number" data-target="25">0</h3>
+        <p class="stat-label">Partner Organizations</p>
+        <span class="stat-description">Local and international collaborations for greater impact</span>
+      </div>
+
+      <div class="stat-item animate__animated animate__fadeInUp animate__delay-5s">
+        <div class="stat-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3 class="stat-number" data-target="1000">0</h3>
+        <p class="stat-label">Acts of Service</p>
+        <span class="stat-description">Community service activities and volunteer hours contributed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-section">
+  <div class="container">
+    <h2 class="section-title animate__animated animate__fadeInUp">Why Wisdom Chamber?</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      What makes our approach to spiritual growth and community building unique
+    </p>
+
+    <div class="why-grid">
+      
+      <div class="why-item animate__animated animate__fadeInLeft animate__delay-2s">
+        <div class="why-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <div class="why-content">
+          <h4>Authentic Community</h4>
+          <p>We foster genuine relationships built on trust, respect, and shared values. Our community feels like family because we treat each other with unconditional love and support.</p>
+        </div>
+      </div>
+
+      <div class="why-item animate__animated animate__fadeInRight animate__delay-2s">
+        <div class="why-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <div class="why-content">
+          <h4>Practical Wisdom</h4>
+          <p>Our teachings bridge the gap between spiritual principles and daily life, offering practical guidance that you can immediately apply to real-world situations and challenges.</p>
+        </div>
+      </div>
+
+      <div class="why-item animate__animated animate__fadeInLeft animate__delay-3s">
+        <div class="why-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <div class="why-content">
+          <h4>Inclusive Approach</h4>
+          <p>We welcome people from all backgrounds, cultures, and faith traditions. Our inclusive environment celebrates diversity while finding common ground in our shared humanity.</p>
+        </div>
+      </div>
+
+      <div class="why-item animate__animated animate__fadeInRight animate__delay-3s">
+        <div class="why-icon">
+          <i class="fas fa-hands-helping"></i>
+        </div>
+        <div class="why-content">
+          <h4>Action-Oriented</h4>
+          <p>We believe faith without action is incomplete. Our community actively engages in service projects, social justice initiatives, and meaningful outreach programs.</p>
+        </div>
+      </div>
+
+      <div class="why-item animate__animated animate__fadeInLeft animate__delay-4s">
+        <div class="why-icon">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <div class="why-content">
+          <h4>Growth-Focused</h4>
+          <p>Personal and spiritual development are at the heart of everything we do. We provide tools, mentorship, and opportunities for continuous growth and transformation.</p>
+        </div>
+      </div>
+
+      <div class="why-item animate__animated animate__fadeInRight animate__delay-4s">
+        <div class="why-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="why-content">
+          <h4>Trustworthy Leadership</h4>
+          <p>Our leaders are committed to transparency, integrity, and servant leadership. We practice what we preach and lead by example in all our endeavors.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="about-cta-section">
+  <div class="container">
+    <div class="cta-content animate__animated animate__fadeInUp">
+      <h2>Ready to Begin Your Journey?</h2>
+      <p>Join our thriving community and discover the transformative power of wisdom, faith, and authentic relationships</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-primary large">
+          <i class="fas fa-heart"></i> Join Our Community
+        </a>
+        <a href="founders.html" class="btn-secondary large">
+          <i class="fas fa-users"></i> Meet Our Leaders
+        </a>
+        <a href="index.html" class="btn-tertiary large">
+          <i class="fas fa-home"></i> Explore Our Home
+        </a>
+      </div>
+      <div class="cta-contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@wisdomchamber.org</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+254 XXX XXX XXX</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Nairobi, Kenya</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// About page specific scripts
+document.addEventListener('DOMContentLoaded', function() {
+  // Animate statistics numbers
+  const statNumbers = document.querySelectorAll('.stat-number');
+  
+  const animateStats = () => {
+    statNumbers.forEach(stat => {
+      const target = parseInt(stat.getAttribute('data-target'));
+      let current = 0;
+      const increment = target / 100;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        stat.textContent = Math.floor(current) + '+';
+      }, 30);
+    });
+  };
+
+  // Intersection Observer for stats animation
+  const statsSection = document.querySelector('.impact-section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateStats();
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  if (statsSection) {
+    observer.observe(statsSection);
+  }
+
+  // Mobile menu toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+});
+</script>
+
+<style>
+/* About Page Specific Styles */
+.about-hero {
+  height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/wisdom chamber.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.about-hero-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.about-hero-content p {
+  font-size: 1.3em;
+  color: #ddd;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.our-story-section {
+  padding: 100px 0;
+  background: #111;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-text h2 {
+  margin-bottom: 30px;
+  color: #ff0000;
+}
+
+.lead-paragraph {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #ff0000;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.story-content p {
+  margin-bottom: 20px;
+  color: #ddd;
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+
+.story-image {
+  position: relative;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 20px;
+  border-radius: 0 0 15px 15px;
+}
+
+.mvv-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.mvv-card {
+  background: linear-gradient(135deg, #222 0%, #333 100%);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+}
+
+.mvv-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255,0,0,0.2);
+  border-color: #ff0000;
+}
+
+.mvv-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px auto;
+  font-size: 2em;
+  color: white;
+}
+
+.mvv-card h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
+.mvv-card p {
+  color: #ddd;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.mvv-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,0,0,0.1);
+  padding: 8px 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,0,0,0.2);
+  color: #ff0000;
+  font-size: 0.9em;
+}
+
+.what-we-do-section {
+  padding: 100px 0;
+  background: #111;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.program-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff0000;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.program-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.program-card h4 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #ff0000;
+}
+
+.program-card p {
+  color: #ddd;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.program-features {
+  list-style: none;
+  padding: 0;
+}
+
+.program-features li {
+  padding: 5px 0;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+.program-features li:before {
+  content: "✓ ";
+  color: #ff0000;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.impact-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  border: 1px solid #333;
+}
+
+.stat-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  font-size: 2em;
+  color: white;
+}
+
+.stat-number {
+  font-size: 3em;
+  font-weight: bold;
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.stat-description {
+  color: #ccc;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.why-choose-section {
+  padding: 100px 0;
+  background: #111;
+}
+
+.why-grid {
+  display: grid;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.why-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 15px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.why-item:hover {
+  border-color: #ff0000;
+  transform: translateX(10px);
+}
+
+.why-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  flex-shrink: 0;
+}
+
+.why-content h4 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #ff0000;
+}
+
+.why-content p {
+  color: #ddd;
+  line-height: 1.7;
+}
+
+.about-cta-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
+.cta-content p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: #ddd;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btn-tertiary {
+  background: transparent;
+  border: 2px solid #666;
+  color: #ddd;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-tertiary:hover {
+  background: #666;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.cta-contact-info {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ccc;
+}
+
+.contact-item i {
+  color: #ff0000;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 2.5em;
+  }
+  
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .mvv-grid,
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .impact-stats {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .why-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .why-item:hover {
+    transform: none;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-contact-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+</style>
+
 </body>
 </html>
