@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Founders | Wisdom Chamber</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="nav-container">
+   <img src="assets/images/logo.png" alt="Wisdom Chamber Logo" class="logo">
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#transform">Transform</a>
+      <a href="founders.html" class="active">Founders</a>
+      <a href="media.html">Media</a>
+      <a href="#gallery">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-toggle" id="navToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+<!-- Founders Section -->
+<section class="founders-section" id="founders">
+  <div class="container">
+    <h2 class="section-title animate__animated animate__fadeInUp">Meet Our Founders</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Visionary leaders dedicated to transforming lives through wisdom and faith
+    </p>
+    
+    <!-- Main Founder -->
+    <div class="main-founder-container animate__animated animate__fadeInUp animate__delay-2s">
+      <div class="main-founder-card">
+        <div class="founder-image-container">
+          <img src="assets/images/living son .jpg" alt="Living Son" class="founder-image" />
+          <div class="founder-badge">Main Founder</div>
+        </div>
+        <div class="founder-content">
+          <h3>Living Son</h3>
+          <p class="founder-title">Founder & Visionary Leader</p>
+          <p class="founder-description">
+            Living Son is the visionary founder of Wisdom Chamber, dedicated to creating transformative spiritual experiences that bridge divides and unite communities. With a passion for interfaith dialogue and personal transformation, he leads the organization with wisdom, compassion, and unwavering commitment to positive change.
+          </p>
+          <div class="founder-mission">
+            <h4><i class="fas fa-lightbulb"></i> Vision</h4>
+            <p>"To create a world where wisdom transcends boundaries and faith becomes a unifying force for peace and understanding."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Co-Founders Grid -->
+    <h3 class="co-founders-title animate__animated animate__fadeInUp animate__delay-3s">Co-Founders</h3>
+    <div class="co-founders-grid animate__animated animate__fadeInUp animate__delay-4s">
+      
+      <!-- Marvo -->
+      <div class="founder-card">
+        <div class="founder-image-container">
+          <img src="assets/images/marvo photo.jpg" alt="Marvo" class="founder-image" />
+          <div class="founder-badge co-founder">Co-Founder</div>
+        </div>
+        <div class="founder-content">
+          <h3>Marvo</h3>
+          <p class="founder-title">Co-Founder & Strategic Director</p>
+          <p class="founder-description">
+            Marvo brings strategic vision and operational excellence to Wisdom Chamber. With expertise in community building and organizational development, he ensures that our mission reaches its full potential through innovative programs and sustainable growth.
+          </p>
+          <div class="founder-skills">
+            <span class="skill-tag"><i class="fas fa-users"></i> Community Building</span>
+            <span class="skill-tag"><i class="fas fa-chart-line"></i> Strategic Planning</span>
+            <span class="skill-tag"><i class="fas fa-handshake"></i> Partnership Development</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Abby -->
+      <div class="founder-card">
+        <div class="founder-image-container">
+          <img src="assets/images/abby photo.jpg" alt="Abby" class="founder-image" />
+          <div class="founder-badge co-founder">Co-Founder</div>
+        </div>
+        <div class="founder-content">
+          <h3>Abby</h3>
+          <p class="founder-title">Co-Founder & Program Coordinator</p>
+          <p class="founder-description">
+            Abby is the heart of our educational programs and community outreach initiatives. Her dedication to spiritual growth and interfaith understanding ensures that every individual who encounters Wisdom Chamber experiences meaningful transformation.
+          </p>
+          <div class="founder-skills">
+            <span class="skill-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+            <span class="skill-tag"><i class="fas fa-heart"></i> Community Care</span>
+            <span class="skill-tag"><i class="fas fa-globe"></i> Outreach Programs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="founders-cta animate__animated animate__fadeInUp animate__delay-5s">
+      <h3>Join Our Mission</h3>
+      <p>Together with our founders, become part of a movement that transforms lives and builds bridges across communities.</p>
+      <a href="contact.html" class="founder-btn">
+        <i class="fas fa-envelope"></i> Get in Touch
+      </a>
+      <a href="index.html" class="founder-btn secondary">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+// Add animation on scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+      }
+    });
+  }, observerOptions);
+
+  // Observe founder cards
+  document.querySelectorAll('.founder-card').forEach(card => {
+    observer.observe(card);
+  });
+
+  // Mobile menu toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('show');
+    });
+  }
+});
+</script>
+
+<style>
+/* Additional Founders Page Specific Styles */
+.founders-section {
+  background: linear-gradient(135deg, #111 0%, #222 100%);
+  min-height: 100vh;
+  padding: 100px 0 50px 0;
+}
+
+.main-founder-container {
+  margin: 50px 0;
+}
+
+.main-founder-card {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  border: 1px solid #333;
+  margin-bottom: 60px;
+}
+
+.founder-image-container {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.founder-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #ff0000;
+}
+
+.founder-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+}
+
+.founder-badge.co-founder {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+}
+
+.founder-content h3 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #ff0000;
+}
+
+.founder-title {
+  font-size: 1.2em;
+  color: #ccc;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.founder-description {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.founder-mission {
+  background: rgba(255,0,0,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #ff0000;
+}
+
+.founder-mission h4 {
+  color: #ff0000;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.founder-mission h4 i {
+  margin-right: 10px;
+}
+
+.co-founders-title {
+  text-align: center;
+  font-size: 2.2em;
+  margin: 60px 0 40px 0;
+  color: #fff;
+}
+
+.co-founders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.founder-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.founder-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border-color: #ff0000;
+}
+
+.founder-card .founder-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.founder-card h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #ff0000;
+}
+
+.founder-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skill-tag {
+  background: rgba(0,123,255,0.2);
+  color: #007bff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9em;
+  border: 1px solid rgba(0,123,255,0.3);
+}
+
+.skill-tag i {
+  margin-right: 5px;
+}
+
+.founders-cta {
+  text-align: center;
+  margin-top: 80px;
+  padding: 40px;
+  background: rgba(255,0,0,0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(255,0,0,0.2);
+}
+
+.founders-cta h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #ff0000;
+}
+
+.founders-cta p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.founder-btn.secondary {
+  background: transparent;
+  border: 2px solid #666;
+  color: #ddd;
+  margin-left: 20px;
+}
+
+.founder-btn.secondary:hover {
+  background: #666;
+  color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .main-founder-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .founder-image {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  
+  .co-founders-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .founder-content h3 {
+    font-size: 2em;
+  }
+  
+  .founders-cta {
+    padding: 20px;
+  }
+  
+  .founder-btn {
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+  }
+}
+</style>
+
+</body>
+</html>
