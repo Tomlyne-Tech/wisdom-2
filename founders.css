@@ -112,6 +112,47 @@ body {
   margin: 0 auto;
 }
 
+/* Main founder section */
+.main-founder {
+  margin-bottom: 60px;
+}
+
+.main-founder-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
+  border: 2px solid #00ffe1;
+  box-shadow: 0 15px 40px rgba(0, 255, 225, 0.2);
+}
+
+.main-founder-card .founder-image img {
+  width: 200px;
+  height: 200px;
+  border: 6px solid #00ffe1;
+}
+
+.main-founder-card .founder-info h3 {
+  font-size: 2.2rem;
+  color: #00ffe1;
+}
+
+.main-founder-card .founder-info h4 {
+  font-size: 1.3rem;
+  color: #0080ff;
+}
+
+/* Co-founders section */
+.co-founders-section {
+  margin-bottom: 60px;
+}
+
+.co-founders-section h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #00ffe1;
+  margin-bottom: 40px;
+}
+
 .founders-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -323,6 +364,23 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .main-founder-card .founder-image img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .main-founder-card .founder-info h3 {
+    font-size: 1.8rem;
+  }
+  
+  .main-founder-card .founder-info h4 {
+    font-size: 1.1rem;
+  }
+  
+  .co-founders-section h2 {
+    font-size: 1.8rem;
+  }
+  
   .founders-grid {
     grid-template-columns: 1fr;
   }

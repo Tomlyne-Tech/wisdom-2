@@ -355,6 +355,112 @@ body {
   font-size: 1rem;
 }
 
+/* Media Team Leader section */
+.media-team-leader {
+  margin-bottom: 80px;
+}
+
+.media-team-leader h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00ffe1;
+  text-align: center;
+}
+
+.leader-card {
+  background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.leader-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #00ffe1, #0080ff);
+}
+
+.leader-image {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.leader-image i {
+  font-size: 8rem;
+  color: #00ffe1;
+  border: 4px solid #00ffe1;
+  border-radius: 50%;
+  padding: 20px;
+  background: rgba(0, 255, 225, 0.1);
+}
+
+.leader-info {
+  flex: 1;
+}
+
+.leader-info h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00ffe1;
+}
+
+.leader-info h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #0080ff;
+  font-weight: 500;
+}
+
+.leader-info p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.leader-achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.achievement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 255, 225, 0.1);
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 225, 0.2);
+}
+
+.achievement i {
+  color: #00ffe1;
+  font-size: 0.9rem;
+}
+
+.achievement span {
+  color: #ccc;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.leader-info .social-links {
+  justify-content: flex-start;
+}
+
 /* Navigation link */
 .nav-link {
   display: inline-flex;
@@ -505,6 +611,38 @@ body {
   .stat-card h3 {
     font-size: 2rem;
   }
+
+  .media-team-leader h2 {
+    font-size: 2rem;
+  }
+  
+  .leader-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  
+  .leader-image i {
+    font-size: 6rem;
+    padding: 15px;
+  }
+  
+  .leader-info h3 {
+    font-size: 1.6rem;
+  }
+  
+  .leader-info h4 {
+    font-size: 1rem;
+  }
+  
+  .leader-achievements {
+    justify-content: center;
+  }
+  
+  .leader-info .social-links {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -528,5 +666,27 @@ body {
   .modal-content {
     width: 95%;
     padding: 10px;
+  }
+
+  .media-team-leader h2 {
+    font-size: 1.6rem;
+  }
+  
+  .leader-card {
+    padding: 20px 15px;
+  }
+  
+  .leader-image i {
+    font-size: 5rem;
+    padding: 12px;
+  }
+  
+  .leader-info h3 {
+    font-size: 1.4rem;
+  }
+  
+  .achievement {
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
 }
