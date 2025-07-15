@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Wisdom Chamber</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <img src="../assets/images/logo.png" alt="Wisdom Chamber Logo" class="sidebar-logo">
+                <h3>Admin Panel</h3>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li class="menu-item active" data-tab="dashboard">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="menu-item" data-tab="emails">
+                    <i class="fas fa-envelope"></i>
+                    <span>Emails</span>
+                    <span class="badge" id="unreadBadge">0</span>
+                </li>
+                <li class="menu-item" data-tab="activities">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Activities</span>
+                </li>
+            </ul>
+            
+            <div class="sidebar-footer">
+                <div class="admin-info">
+                    <i class="fas fa-user-circle"></i>
+                    <span id="adminName">Admin</span>
+                </div>
+                <button class="logout-btn" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard Tab -->
+            <div id="dashboard" class="tab-content active">
+                <div class="page-header">
+                    <h1>Dashboard Overview</h1>
+                    <p>Welcome back! Here's what's happening on your website.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="totalEmails">0</h3>
+                            <p>Total Emails</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-envelope-open"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="unreadEmails">0</h3>
+                            <p>Unread Emails</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-reply"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="repliedEmails">0</h3>
+                            <p>Replied Emails</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="totalActivities">0</h3>
+                            <p>Recent Activities</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recent-activities">
+                    <h2>Recent Activities</h2>
+                    <div id="recentActivitiesList" class="activities-list">
+                        <!-- Activities will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emails Tab -->
+            <div id="emails" class="tab-content">
+                <div class="page-header">
+                    <h1>Email Management</h1>
+                    <p>Manage and reply to emails from your website visitors.</p>
+                </div>
+                
+                <div class="emails-container">
+                    <div class="emails-list" id="emailsList">
+                        <!-- Emails will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activities Tab -->
+            <div id="activities" class="tab-content">
+                <div class="page-header">
+                    <h1>Website Activities</h1>
+                    <p>Track all activities happening on your website.</p>
+                </div>
+                
+                <div class="activities-container">
+                    <div id="allActivitiesList" class="activities-list">
+                        <!-- All activities will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Email Reply Modal -->
+    <div id="replyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Reply to Email</h2>
+                <span class="close" onclick="closeReplyModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="original-email">
+                    <h3>Original Message:</h3>
+                    <div id="originalEmailContent"></div>
+                </div>
+                <div class="reply-form">
+                    <label for="replyMessage">Your Reply:</label>
+                    <textarea id="replyMessage" rows="6" placeholder="Type your reply here..."></textarea>
+                    <div class="modal-actions">
+                        <button onclick="closeReplyModal()" class="btn btn-secondary">Cancel</button>
+                        <button onclick="sendReply()" class="btn btn-primary">Send Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
